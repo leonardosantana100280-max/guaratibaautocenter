@@ -3,40 +3,40 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const testimonials = [
   {
-    name: "Carlos Eduardo",
-    vehicle: "Toyota Corolla 2022",
+    name: "Marcos da Silva",
+    vehicle: "Fiat Uno 2018",
     rating: 5,
-    text: "Excelente atendimento! Levei meu carro para revisão e ficou impecável. Preço justo e serviço de qualidade. Recomendo demais a Guaratiba Auto Center.",
+    text: "Meu Uno tava com barulho na suspensão há meses. Trouxe aqui e resolveram rapidinho, com peça de qualidade e preço justo. Já virei cliente fixo!",
   },
   {
-    name: "Mariana Silva",
-    vehicle: "Honda HR-V 2021",
+    name: "Dona Cláudia",
+    vehicle: "Chevrolet Onix 2020",
     rating: 5,
-    text: "Já sou cliente há mais de 5 anos. Sempre fui muito bem atendida e nunca tive problemas com os serviços. Profissionais de confiança!",
+    text: "Sou cliente há mais de 10 anos, desde quando tinha meu Corsa. Confiança total! Sempre explicam tudo direitinho antes de fazer qualquer serviço.",
   },
   {
-    name: "Roberto Almeida",
-    vehicle: "Volkswagen Golf 2020",
+    name: "Wellington Santos",
+    vehicle: "Volkswagen Gol G6 2016",
     rating: 5,
-    text: "Fiz a troca de suspensão completa e o trabalho ficou perfeito. O carro ficou como novo! Preço competitivo e mão de obra impecável.",
+    text: "Troquei a embreagem do meu Gol e ficou show. O carro parece que saiu da concessionária. Preço honesto e trabalho bem feito.",
   },
   {
-    name: "Fernanda Costa",
-    vehicle: "Hyundai HB20 2023",
+    name: "Patrícia Oliveira",
+    vehicle: "Hyundai HB20 2019",
     rating: 5,
-    text: "Atendimento rápido e eficiente. Resolveram o problema do meu carro no mesmo dia. Transparência total no orçamento. Super indico!",
+    text: "Vim fazer revisão dos freios e descobriram outros problemas que nem tinha percebido. Foram honestos e o orçamento coube no bolso. Recomendo demais!",
   },
   {
-    name: "Paulo Henrique",
-    vehicle: "Fiat Toro 2022",
+    name: "Seu Jorge",
+    vehicle: "Fiat Strada 2017",
     rating: 5,
-    text: "Oficina de confiança com mais de 30 anos de experiência. Isso faz toda diferença! Equipe competente e preços honestos.",
+    text: "Uso minha Strada pro trabalho e não posso ficar parado. Aqui resolvem no mesmo dia sempre que possível. Mais de 30 anos de experiência não é à toa!",
   },
   {
-    name: "Ana Beatriz",
-    vehicle: "Chevrolet Onix 2021",
+    name: "Amanda Ferreira",
+    vehicle: "Renault Kwid 2021",
     rating: 5,
-    text: "Meu mecânico de confiança há anos. Sempre me explicam tudo que vai ser feito e dão opções de peças. Recomendo para todos!",
+    text: "Primeira vez que vim e já me conquistaram. Atendimento excelente, explicaram tudinho sobre a troca de óleo e filtros. Voltarei com certeza!",
   },
 ]
 
