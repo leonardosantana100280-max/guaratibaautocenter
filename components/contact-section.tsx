@@ -26,8 +26,9 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Localização",
-    value: "Guaratiba, Rio de Janeiro - RJ",
-    description: "Fácil acesso e estacionamento",
+    value: "Estrada da Matriz, 536 – Pedra de Guaratiba",
+    link: "https://www.google.com/maps/search/?api=1&query=Estrada+da+Matriz+536+Pedra+de+Guaratiba+Rio+de+Janeiro",
+    description: "Rio de Janeiro - RJ",
   },
 ]
 
@@ -74,17 +75,47 @@ export function ContactSection() {
           ))}
         </div>
 
+        {/* Endereço em destaque */}
+        <div className="bg-primary/10 border border-primary/30 rounded-2xl p-6 md:p-8 mb-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+            <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <MapPin className="h-8 w-8 text-primary-foreground" />
+            </div>
+            <div>
+              <p className="text-muted-foreground text-sm uppercase tracking-wider mb-1">Nosso Endereço</p>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground">
+                Estrada da Matriz, 536 – Pedra de Guaratiba
+              </h3>
+              <p className="text-muted-foreground mt-1">Rio de Janeiro - RJ</p>
+            </div>
+            <Button 
+              asChild 
+              className="md:ml-auto bg-primary hover:bg-primary/90"
+            >
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Estrada+da+Matriz+536+Pedra+de+Guaratiba+Rio+de+Janeiro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MapPin className="mr-2 h-4 w-4" />
+                Como Chegar
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        {/* Mapa integrado */}
         <div className="rounded-2xl overflow-hidden border border-border">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58851.09116371!2d-43.59!3d-23.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be1c0d32c6e47%3A0x2ff3b9c9f7c5c5c5!2sGuaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.5!2d-43.62!3d-23.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAzJzAwLjAiUyA0M8KwMzcnMTIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr&q=Estrada+da+Matriz+536+Pedra+de+Guaratiba+Rio+de+Janeiro"
             width="100%"
-            height="400"
+            height="450"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Localização Guaratiba Auto Center"
-            className="grayscale contrast-125 opacity-80"
+            title="Localização Guaratiba Auto Center - Estrada da Matriz, 536"
+            className="grayscale-[30%] contrast-110"
           />
         </div>
 
